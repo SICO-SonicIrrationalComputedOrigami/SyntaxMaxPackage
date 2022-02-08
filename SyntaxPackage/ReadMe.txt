@@ -3,7 +3,7 @@
 
 syntax.filter.maxpat
 
-Abstraction per richiamare una serie di cinque filtri per adattare l'exciter con il relativo strumento sul quale viene applicato. 
+Abstraction che permette di richiamare una serie di cinque filtri per adattare l'exciter allo strumento sul quale viene applicato. 
 I filtri sono sviluppati in gen~ e la lista contenente i preset é il file "filterSelection.js"
 
 1) COME SI USA
@@ -42,7 +42,7 @@ Lista degli argomenti		Exciter Applicato Dayton Audio
 
 syntax.compressor.maxpat
 
-Questa abstraction in gen~ processa segnali mono e con l'intento di controllare la dinamica del segnale inviata agli exciter.
+Questa abstraction in gen~ processa segnali mono al fine di controllare la dinamica del segnale inviata agli exciter.
 Attualmente sono presenti tre salvataggi dei parametri di controllo della dinamica richiamabili attraverso l'oggetto preset:
 
 1) bypassed
