@@ -46,7 +46,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 50.0, 104.0, 30.0, 30.0 ]
 				}
 
@@ -93,7 +93,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 624.0, 179.0, 754.0, 755.0 ],
+						"rect" : [ 1099.0, 160.0, 754.0, 755.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -122,18 +122,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 309.5, 107.0, 22.0 ],
-									"text" : "gen @file notchD2"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-38",
 									"linecount" : 6,
@@ -228,7 +216,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 5.0, 81.0, 62.0 ],
+									"patching_rect" : [ 41.0, 5.0, 83.0, 62.0 ],
 									"text" : "param fc0 @min 20 @max 20000 @default 500"
 								}
 
@@ -451,7 +439,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 332.0, 259.0, 85.0, 49.0 ],
+									"patching_rect" : [ 346.0, 252.0, 85.0, 49.0 ],
 									"text" : "param gain2 @min -100 @max 36"
 								}
 
@@ -464,7 +452,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 244.0, 259.0, 71.0, 49.0 ],
+									"patching_rect" : [ 258.0, 252.0, 71.0, 49.0 ],
 									"text" : "param Q2 @min 0.1 @max 100"
 								}
 
@@ -477,7 +465,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.0, 246.0, 71.0, 62.0 ],
+									"patching_rect" : [ 169.0, 239.0, 71.0, 62.0 ],
 									"text" : "param fc2 @min 20 @max 20000"
 								}
 
@@ -489,7 +477,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 332.0, 310.0, 85.0, 22.0 ],
+									"patching_rect" : [ 346.0, 303.0, 85.0, 22.0 ],
 									"text" : "setparam gain"
 								}
 
@@ -501,7 +489,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 244.0, 310.0, 71.0, 22.0 ],
+									"patching_rect" : [ 258.0, 303.0, 71.0, 22.0 ],
 									"text" : "setparam Q"
 								}
 
@@ -513,7 +501,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.0, 310.0, 71.0, 22.0 ],
+									"patching_rect" : [ 169.0, 303.0, 71.0, 22.0 ],
 									"text" : "setparam fc"
 								}
 
@@ -587,8 +575,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 248.0, 107.0, 22.0 ],
-									"text" : "gen @file notchD2"
+									"patching_rect" : [ 41.0, 271.0, 124.0, 22.0 ],
+									"text" : "gen @file notch4thD2"
 								}
 
 							}
@@ -856,7 +844,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-16", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -864,15 +852,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"order" : 1,
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"order" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -880,23 +859,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"order" : 1,
 									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"order" : 0,
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -933,7 +896,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.0, 72.0, 30.0, 30.0 ]
 				}
 

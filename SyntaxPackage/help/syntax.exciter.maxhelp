@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -101,8 +101,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1118,57 +1118,57 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "syntax.filter.maxpat",
-				"bootpath" : "~/Downloads/SyntaxPackage/help",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/abstraction",
+				"patcherrelativepath" : "../abstraction",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "filterSelection.js",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/js",
+				"patcherrelativepath" : "../js",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "notchD2.gendsp",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "lowPassD2.gendsp",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "highPass4thD2.gendsp",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peakingD2.gendsp",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "notch4thD2.gendsp",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syntax.compressor.maxpat",
-				"bootpath" : "~/Downloads/SyntaxPackage/help",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/abstraction",
+				"patcherrelativepath" : "../abstraction",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "limiter.gendsp",
-				"bootpath" : "~/Desktop/_________Maurilio_filtro_news",
-				"patcherrelativepath" : "../../../Desktop/_________Maurilio_filtro_news",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
@@ -1211,8 +1211,8 @@
 				"name" : "Default M4L",
 				"default" : 				{
 					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1222,8 +1222,8 @@
 				"name" : "Default M4L Poletti",
 				"default" : 				{
 					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1234,6 +1234,7 @@
 				"default" : 				{
 					"fontsize" : [ 11.0 ],
 					"fontname" : [ "Arial" ],
+					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1242,8 +1243,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"fontface" : [ 1 ]
+
 				}
 ,
 				"parentstyle" : "",
