@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 279.0, 79.0, 664.0, 689.0 ],
+		"rect" : [ 279.0, 79.0, 769.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,214 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 80.5, 209.0, 58.0, 22.0 ],
+									"text" : "autofit $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 80.5, 180.5, 70.0, 22.0 ],
+									"text" : "loadmess 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-41",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 100.0, 62.0, 22.0 ],
+									"text" : "route filter"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 11.595186999999999,
+									"id" : "obj-39",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.5, 127.0, 95.0, 21.0 ],
+									"text" : "sprintf %s.jpeg"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.5, 153.0, 71.0, 22.0 ],
+									"text" : "prepend pic"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-4",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 59.5, 291.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-39", 0 ],
+									"source" : [ "obj-41", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"midpoints" : [ 90.0, 220.0 ],
+									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 395.0, 34.0, 71.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p picLoader"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"id" : "obj-10",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 395.0, 64.0, 323.0, 263.0 ],
+					"pic" : "piano1.jpeg",
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 36.0, 514.0, 452.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-5",
@@ -102,13 +310,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 403.0, 226.0, 1243.0, 706.0 ],
+						"rect" : [ 682.0, 191.0, 1243.0, 706.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -519,17 +727,19 @@
 			}
 , 			{
 				"box" : 				{
+					"audioframerate" : 10.0,
 					"audioframesize" : 1024,
 					"domainlabel" : "Frequency (Hz)",
+					"fontsize" : 14.0,
+					"gridcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"id" : "obj-59",
-					"margins" : [ 8.0, 8.0, 20.0, 50.0 ],
+					"margins" : [ 12.0, 12.0, 40.0, 50.0 ],
 					"maxclass" : "plot~",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"numplots" : 2,
 					"numpoints" : 512,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 403.0, 385.0, 220.0 ],
+					"patching_rect" : [ 215.0, 399.0, 503.0, 299.0 ],
 					"rangelabel" : "Magnitude (dB)",
 					"subplots" : [ 						{
 							"color" : [ 0.4, 0.4, 0.75, 1.0 ],
@@ -551,27 +761,8 @@
 							"origin_x" : 0.0,
 							"origin_y" : 0.0
 						}
-, 						{
-							"color" : [ 0.699999988079071, 0.280000001192093, 0.389999985694885, 1.0 ],
-							"thickness" : 1.0,
-							"point_style" : "none",
-							"line_style" : "curve",
-							"number_style" : "none",
-							"filter" : "atodb",
-							"domain_start" : 0.0,
-							"domain_end" : 22050.0,
-							"domain_style" : "log",
-							"domain_markers" : [  ],
-							"domain_labels" : [  ],
-							"range_start" : -132.0,
-							"range_end" : 0.0,
-							"range_style" : "linear",
-							"range_markers" : [  ],
-							"range_labels" : [  ],
-							"origin_x" : 0.0,
-							"origin_y" : 0.0
-						}
- ]
+ ],
+					"thinto" : 0.100000001490116
 				}
 
 			}
@@ -767,7 +958,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 49.0, 336.0, 172.0, 22.0 ],
+					"patching_rect" : [ 49.0, 347.599999666213989, 172.0, 22.0 ],
 					"text" : "syntax.compressor"
 				}
 
@@ -836,7 +1027,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.0, 53.0, 219.0, 28.0 ],
-					"text" : "Exciter Controllers",
+					"text" : "Exciter Pre-Processing",
 					"textcolor" : [ 0.584, 0.796, 0.216, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1078,6 +1269,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -1085,7 +1284,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
+					"order" : 1,
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -1117,24 +1326,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "syntax.filter.maxpat",
-				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/abstraction",
-				"patcherrelativepath" : "../abstraction",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "filterSelection.js",
 				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/js",
 				"patcherrelativepath" : "../js",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lowPassD2.gendsp",
-				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
-				"patcherrelativepath" : "../lib",
-				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
@@ -1145,7 +1340,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "peakingD2.gendsp",
+				"name" : "limiter.gendsp",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lowPassD2.gendsp",
 				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "gDSP",
@@ -1159,6 +1361,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "peakingD2.gendsp",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "piano1.jpeg",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/pics",
+				"patcherrelativepath" : "../pics",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "syntax.compressor.maxpat",
 				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/abstraction",
 				"patcherrelativepath" : "../abstraction",
@@ -1166,10 +1382,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "limiter.gendsp",
-				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/lib",
-				"patcherrelativepath" : "../lib",
-				"type" : "gDSP",
+				"name" : "syntax.filter.maxpat",
+				"bootpath" : "~/Documents/SyntaxResearch/SyntaxMaxPackage/SyntaxPackage/abstraction",
+				"patcherrelativepath" : "../abstraction",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1210,9 +1426,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"fontname" : [ "Arial Bold" ],
 					"fontsize" : [ 11.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontname" : [ "Arial Bold" ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1221,9 +1437,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"fontname" : [ "Arial Bold" ],
 					"fontsize" : [ 10.0 ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontname" : [ "Arial Bold" ]
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1232,9 +1448,6 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1243,7 +1456,10 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-
+,
+					"fontface" : [ 1 ],
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 11.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1269,8 +1485,6 @@
 , 			{
 				"name" : "jbb",
 				"default" : 				{
-					"fontsize" : [ 9.0 ],
-					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1279,7 +1493,9 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-
+,
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 9.0 ]
 				}
 ,
 				"parentstyle" : "",
